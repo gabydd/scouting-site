@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Arctos Scouting Site
 
-## Getting Started
+This site use nextjs and tailwindcss for the frontend and stores all the data in google sheets
 
-First, run the development server:
+## Setting Up
 
-```bash
-npm run dev
-# or
-yarn dev
+First clone the repository with:
+
+```shell
+$ git clone https://github.com/Arctos6135/scouting-site.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next you need to set up a service account on google cloud console
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Go to [google console](https://console.cloud.google.com/) and create a new project with a name like "scouting site"
+2. in the search bar look up "service accounts" and press on "Service Accounts" then "create service account"
+3. give your service account a name like "sheeter" and then press "create and continue"
+4. select the basic owner access grant, press continue then done
+5. press on your newly created service account then press on the keys tab and "add key" and press create, this will download the key to your computer
+6. move the downloaded file to where you cloned the repository and change the name to "key.json"
+7. back in google cloud console in the search bar look up "sheets" and press on "Google Sheets API" and press enable
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Now you need to set up the sheet
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. first make a copy of [the 2020 sheet](https://docs.google.com/spreadsheets/d/1a5D56SjuTPhKqZtRwRcIYFt-xY6JXBUuCWTDHxaoYuk/edit)
+2. then add the email of the service account (you can find this by going back to the service accounts area) as an editor to the sheet
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# That is currently it for right now
