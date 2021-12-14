@@ -1,4 +1,4 @@
-import { NUMBER, SELECT, TOGGLE, TIMER } from "./InputTypes";
+import { NUMBER, SELECT, TOGGLE, TIMER } from "./input-types";
 
 const ATTEMPT_DATA = { LOW: NUMBER, HIGH: NUMBER };
 

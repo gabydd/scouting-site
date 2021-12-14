@@ -1,4 +1,4 @@
-import INFINITE_RECHARGE from "./InfiniteRecharge";
+import INFINITE_RECHARGE from "./infinite-recharge";
 
 const GAMES = {
     INFINITE_RECHARGE
