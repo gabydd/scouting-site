@@ -1,7 +1,11 @@
-import { FC } from "react";
-
-const TextInput: FC = (props) => {
-  return <div></div>;
+type Props = {};
+const NumberInput = (props: Props) => {
+  return (
+    <div>
+      <label htmlFor="" className=""></label>
+      <input type="number" name="" id="" />
+    </div>
+  );
 };
 
-export default TextInput;
+export default NumberInput;
